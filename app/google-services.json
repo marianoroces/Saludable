@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989465989519",
+    "project_id": "tp-final-fbae5",
+    "storage_bucket": "tp-final-fbae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989465989519:android:276d9efdabb4eb29fdbbfa",
+        "android_client_info": {
+          "package_name": "com.marianoroces.norris.tpfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989465989519-n1o3o2vm5dlj7h25l0mqkgkrrke9ablc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuLaYyZgtUlN4TJoxBOHpZ96E_eQYSVsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989465989519-n1o3o2vm5dlj7h25l0mqkgkrrke9ablc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_type_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/fm_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:text="Tipo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_first_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint="Comida principal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fm_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_second_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint="Comida secundaria">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fm_secon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_beverag_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint="Bebida">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fm_beverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/fm_desert_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:text="Postre" />
+
+        <RadioGroup
+            android:id="@+id/fm_desert_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/fm_desert_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SI" />
+
+            <RadioButton
+                android:id="@+id/fm_desert_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_desert_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            android:hint="Postre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fm_desert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Tuvo tentacion de seguir comiendo?" />
+
+        <RadioGroup
+            android:id="@+id/fm_temptation_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp">
+
+            <RadioButton
+                android:id="@+id/fm_temptation_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SI" />
+
+            <RadioButton
+                android:id="@+id/fm_temptation_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fm_temptation_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            android:hint="Alimento que queria ingerir">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fm_temptation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Se quedo con hambre?" />
+
+        <RadioGroup
+            android:id="@+id/fm_hunger_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp">
+
+            <RadioButton
+                android:id="@+id/fm_hunger_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SI" />
+
+            <RadioButton
+                android:id="@+id/fm_hunger_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/fm_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_corners"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+</ScrollView>
